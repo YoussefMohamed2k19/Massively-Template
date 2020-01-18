@@ -1,0 +1,612 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;  
+}
+html {
+    background-color: #222931;
+    background-image: url('../images/bg.jpg') ;
+    background-size:cover;
+    background-attachment: fixed;
+}
+body{
+    scroll-behavior: smooth;
+}
+/*Intro*/
+.intro{
+    padding-top:140px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.intro h1{
+    letter-spacing: 0.1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+.intro p{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7em;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+.intro a{
+    font-size: 50px;
+    color: white;
+    margin: 60px;
+    margin-bottom: 80px;
+}
+.intro a:hover{
+    color:#18bfef;
+    transition: all .4s;
+}
+/*NAV*/
+#nav{
+    width: 80%;
+    /* display: inlineblock; */ /* remove this */
+    margin:auto;
+    background-color: rgba(255,255,255, 0.1);
+    height: 65px;
+    box-sizing: border-box;
+}
+ul{
+    display: inline-block;
+    vertical-align: middle;
+    list-style:none;
+}
+.social a{
+    color: white;
+    font-size: 23px;
+    text-decoration: none;
+    margin: 15px;
+}
+.social li{
+    display: inline;
+}
+.social{
+    float: right;
+    padding-right:20px;
+    padding-top: 5px;
+}
+.wordnav{
+    background-color: white;
+    height: 65px;
+    letter-spacing: 0.1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    cursor: pointer;
+}
+.links li{
+    padding: 20px;
+}
+.links li:hover, 
+.social li a:hover{
+    color:#18bfef;
+    transition: all .4s;
+}
+/*Post*/
+.post{
+    width: 80%;
+    /* display: inlineblock; */ /* remove this */
+    margin:auto;
+    background-color: rgba(255, 255, 255);
+    padding-left: 128px;
+    padding-right: 128px;
+    padding-bottom: 96px;
+}
+.date {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+    line-height: 0.1em;
+    margin: 0px 0 20px;
+    padding-top: 120px; 
+    margin-bottom: 60px;
+ } 
+ .date span { 
+     background:#fff; 
+     padding:0 50px; 
+ }
+.major h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.major h2 a{
+    letter-spacing: 0.075em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    text-transform: uppercase;
+    color: rgb(33, 41, 49);
+    cursor: pointer;
+}
+.major h2 a:hover{
+    color:#18bfef;
+    transition: all .4s;
+}
+.major p{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    font-style: italic;
+    color: #212931;
+    font-size: 15px;
+    line-height: 35px;
+    font-weight: 300;
+}
+.poster img{
+    width: 100%;
+    margin-top: 60px;
+    /* [2] Transition property for smooth transformation of images */
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+.poster {
+    /*height: 436px;*/ /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  /* [3] Finally, transforming the image when container gets hovered */
+.poster:hover img {
+    transform: scale(1.06);
+}
+.boxed{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+}
+a.button1{
+    display:inline-block;
+    padding:0.90em 1.2em;
+    border:0.15em solid#212931;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:900;
+    color:#212931;
+    text-align:center;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+a.button1:hover{
+    color:#18bfef;
+    border:0.15em solid#18bfef;
+}
+@media all and (max-width:30em){
+    a.button1{
+    display:block;
+    margin:0.4em auto;
+    }
+}
+.posts{
+    width: 80%;
+    /* display: inlineblock; */ /* remove this */
+    margin:auto;
+    border-top: solid 2px #eeeeee;
+}
+.posts article {
+    float: left;
+    background-color: white;
+    width: 50%;
+    border-right: solid 2px #eeeeee;
+    border-bottom: solid 2px #eeeeee;
+}
+.postspadding{
+    padding: 4rem;
+    padding:2rem 4rem 4rem;
+}
+.postsdate {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    width: 100%; 
+    text-align: center;
+    margin: 0px 0 20px;
+    margin-bottom: 60px;
+ } 
+ .postsdate span { 
+     background:#fff; 
+     padding:0 50px; 
+ }
+.postsmajor h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.postsmajor h2 a{
+    letter-spacing: 0.075em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: rgb(33, 41, 49);
+    cursor: pointer;
+}
+.postsmajor h2 a:hover{
+    color:#18bfef;
+    transition: all .4s;
+}
+.postspadding p{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: left;
+    color: #212931;
+    font-size: 15px;
+    line-height: 35px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+.postsposter img{
+    width: 100%;
+    /* [2] Transition property for smooth transformation of images */
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+.postsposter {
+    /*height: 436px;*/ /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  /* [3] Finally, transforming the image when container gets hovered */
+.postsposter:hover img {
+    transform: scale(1.06);
+}
+.postsboxed{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+}
+/*pagination*/
+.centered{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(255, 255, 255);
+}
+.pagination {
+    display: inline-block;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+  
+.pagination a,.pagination span {
+    color: #222931;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    font-weight: 900;
+    float: left;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    padding: 15px 16px;
+    text-decoration: none;
+    border: 1.5px solid #eeeeee;
+}
+  
+.pagination a.active {
+    background-color: #eeeeee;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    color: #222931;
+    border: 1.5px solid #eeeeee;
+}
+  
+.pagination a:hover,.pagination span:hover {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    border: 1.5px solid #18bfef;
+    color:#18bfef;
+    transition: all .4s;
+}
+  
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+  
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.pagination span i{
+    font-size: 12px;
+    margin-left:10px;
+}
+/*FOOTER*/
+.footer{
+    width: 80%;
+    margin:auto;
+    background-color: #F5F5F5;
+    
+}
+.footer1{
+    padding: 130px 0px 80px 55px;
+    /*TOP RIGHT LEFT BOTTOM*/
+    border-right: solid 2px #eeeeee;
+    float: left;
+    width: 50%;
+    background-color: #F5F5F5;
+    padding-right: 30px;
+}
+/*FORM*/
+/*.form-style-7{
+}*/
+.form-style-7 h1{
+	display: block;
+	text-align: center;
+	padding: 0;
+	margin: 0px 0px 20px 0px;
+	color: #5C5C5C;
+	font-size:x-large;
+}
+.form-style-7 ul{
+	list-style:none;
+	padding:0;
+	margin:0;	
+}
+.form-style-7 li{
+	display: block;
+	padding: 9px;
+	border:2px solid #e2e2e2;
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+.form-style-7 li:last-child{
+	border:none;
+	margin-bottom: 0px;
+	text-align: center;
+}
+.form-style-7 li > label{
+    color: #717981;
+	display: block;
+	float: left;
+	margin-top: -19px;
+	background: #F5F5F5;
+	height: 14px;
+	padding: 0px 5px 2px 5px;
+	font-size: 14px;
+    overflow: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.form-style-7 input[type="text"],
+.form-style-7 input[type="email"],
+.form-style-7 textarea,
+.form-style-7 select 
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+    font-size: 16px;
+    background-color: #F5F5F5;
+	padding: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-7 li:hover {
+	border: 2px solid #18bfef;
+  transition: all .4s;
+}
+.form-style-7 textarea{
+    height: auto;
+}
+.formboxed{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+}
+button.button2{
+    display:inline-block;
+    padding:0.90em 1.2em;
+    border:0.15em solid#717981;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color:#717981;
+    text-align:center;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    background-color: #F5F5F5;
+}
+.button2 a{
+    text-decoration: none;
+    color: inherit;
+}
+button.button2:hover{
+    color:#18bfef;
+    border:0.15em solid#18bfef;
+}
+@media all and (max-width:30em){
+    a.button2{
+    display:block;
+    margin:0.4em auto;
+    }
+}
+/*contact footer*/
+.contact {
+    background-color: #F5F5F5;
+}
+.contact1{
+    border-bottom: solid 2px #eeeeee;
+}
+.contact2 h3,.contact2 ul,
+.contact1 h3,.contact1 p{
+    display:inline;
+}
+.contact li{
+    display: inline-block;
+}
+.firstcontact,.contact1,.contact2{    
+    padding:65px;
+    border-bottom: solid 2px #eeeeee;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.contact p,
+.contact1 p ,.contact1 a{
+    padding-left:80px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #909498;
+    text-decoration: none;
+}
+.contact h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    color: #717981;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.contact1 a:hover{
+    color: #18bfef;
+    transition: all .2s;
+}
+.social-contact li a{
+    padding: 20px;
+    font-size: 15px;
+}
+.contact2 ul{
+    padding-left:85px;
+}
+.contact2 ul li a{
+    padding:10px;
+    display: inline;
+    font-size: 20px;
+    text-decoration: none;
+    color: #717981;
+}
+.contact2 ul li a:hover{
+    color: #18bfef;
+    transition: all .2s;    
+}
+@media(max-width:800px){
+    html::before {
+        content: ' ';
+        display: block;
+        background-image: url('../images/bg.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 150vh;
+        width: 100vw;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        z-index: -10; /* This is pretty important.*/
+      }
+    #nav,.intro a{
+        display: none;
+    }
+    .intro h1{
+        font-size: 47.6667px;
+        line-height: 53px;
+        margin-bottom: 40px;
+    }
+    .intro p{
+        font-size: 15px;
+        line-height: 35px;
+        padding-bottom: 100px;
+    }
+    .post{
+        padding-right: 40px;
+        padding-left: 40px;
+        padding-bottom: 70px;
+        width: 100%;
+    }
+    .data {
+        font-size: 14px;
+    }
+    .data span{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .major h2 a{
+        font-size: 36px;
+    }
+    .major p{
+        font-size: 14px;
+        line-height: 34px;
+    }
+    .major p br{
+        display: none;
+    }
+    .poster img{
+        margin-top: 30px;
+    }
+    .boxed{
+        padding-top:40px;
+    }
+    .posts{
+        width: 100%;
+    }
+    .posts article {
+        background-color: white;
+        width: 100%;
+        border-right: 0px ;
+    }
+    .postspadding{
+        padding: 4rem;
+        padding:2rem 2rem 4rem;
+    }
+    .pagination{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .pagination span{
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+    .pagination span i{
+        font-size: 15px;
+    }
+    .centered{
+        width: 100%;
+    }
+    .centered a{
+        display: none;
+    }
+    .footer{
+        width: 100%;
+    }
+    .footer1{
+        width: 100%;
+        padding: 130px 30px 80px 30px;
+    }
+    .button2{
+        width: 100%;
+    }
+    .firstcontact,.contact1,.contact2{
+        padding: 40px;
+    }
+    .firstcontact{
+        border-top: solid 2px #eeeeee;
+    }
+    .contact2 ul li a{
+        padding: 5px;
+    }
+}
